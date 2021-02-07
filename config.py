@@ -73,7 +73,7 @@ class CRNNConfig(Config):
 
     INPUT_SHAPE = (32, 320, 3)
 
-    TRAIN_DATA_PATH= '/Users/yang/PycharmProjects/ocr-data/ocr_train/'
+    TRAIN_DATA_PATH= '/Users/yang/PycharmProjects/ocr-data/ocr_train/line-01'
 
     CHAR_PATH = './data/char.json'
 
@@ -89,6 +89,7 @@ class CRNNConfig(Config):
             fw.write(char + '\n')
 
     CHECKPOINT_DIR = 'checkpoints/crnn'
+    LOG_DIR = 'logs/crnn'
 
     def __init__(self):
         super().__init__()
